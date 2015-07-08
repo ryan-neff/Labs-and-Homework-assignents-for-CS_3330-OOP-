@@ -1,0 +1,17 @@
+package lab7;
+
+public class Monkey extends Animal implements NonFlying{
+     public Monkey(String type){
+    	 super(true,false,"Monkey");
+     }
+   public boolean eat(Animal food){
+	    if(food instanceof Snake){
+	    	return true;
+	    }
+	    return false;
+   }
+   public void movement(){
+	   
+   }
+   
+}

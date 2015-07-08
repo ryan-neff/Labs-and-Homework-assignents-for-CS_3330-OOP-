@@ -1,0 +1,42 @@
+package lab7;
+
+public abstract class Animal {
+ protected boolean legs;
+ protected boolean wings;
+ protected String type;
+ 
+ public Animal(boolean legs, boolean wings, String type){
+	 setLegs(legs);
+	 setWings(wings);
+	 setType(type);
+ }
+
+private void setType(String type) {
+ this.type = type;	
+}
+
+private void setWings(boolean wings) {
+  this.wings = wings;	
+}
+
+private void setLegs(boolean legs) {
+	 this.legs = legs;
+}
+
+public String getType(){
+	return this.type;
+}
+public boolean getLegs(){
+	return this.legs;
+}
+public boolean getWings(){
+	return this.wings;
+}
+
+@Override
+ public String toString(){
+	return String.format("The %s %s", this.getType(),(this.getWings() && this.getLegs())? "has wings and has legs " : (this.getLegs() && !(this.getWings()))? "does not have wings, but has legs" :"does not have legs or wings");
+}
+ 
+ public abstract boolean eat(Animal food);
+}

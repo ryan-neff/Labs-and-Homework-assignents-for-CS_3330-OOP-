@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Item.java&apos; to &apos;rcn6f4.cs3330.hw1/src/hw1&apos;&#x0A;- Original project: &apos;rcn6f4.cs3330.hw2&apos;&#x0A;- Destination element: &apos;rcn6f4.cs3330.hw1/src/hw1&apos;&#x0A;- Original element: &apos;hw2.Item.java&apos;" description="Copy compilation unit" destination="=rcn6f4.cs3330.hw1/src&lt;hw1" element1="/src&lt;hw2{Item.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1412607644401" units="1" version="1.0"/>
+</session>

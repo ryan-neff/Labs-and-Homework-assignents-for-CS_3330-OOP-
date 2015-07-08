@@ -1,0 +1,13 @@
+package lab7;
+
+public class Snake extends Animal implements NonFlying {
+      public Snake(String type){
+    	  super(false, false,"Snake");
+      }
+      public boolean eat(Animal food){
+    	  if(food instanceof Animal){
+    		  return true;
+    	  }
+    	  return false; //else I would have no idea how one would get here
+      }
+}

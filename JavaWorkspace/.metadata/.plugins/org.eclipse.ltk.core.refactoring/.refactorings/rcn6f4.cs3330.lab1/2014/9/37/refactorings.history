@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;yourpawprint.cs3330.lab1&apos; to &apos;rcn6f4.cs3330.lab1&apos;&#x0A;- Original project: &apos;rcn6f4.cs3330.lab1&apos;&#x0A;- Original element: &apos;rcn6f4.cs3330.lab1/src/yourpawprint.cs3330.lab1&apos;&#x0A;- Renamed element: &apos;rcn6f4.cs3330.lab1/src/rcn6f4.cs3330.lab1&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;yourpawprint.cs3330.lab1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;yourpawprint.cs3330.lab1" name="rcn6f4.cs3330.lab1" qualified="false" references="true" stamp="1410268184516" textual="false" version="1.0"/>
+</session>

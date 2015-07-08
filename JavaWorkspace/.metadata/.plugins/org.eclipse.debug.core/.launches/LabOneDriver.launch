@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/rcn6f4.cs3330.lab1/src/rcn6f4/cs3330/lab1/LabOneDriver.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="rcn6f4.cs3330.lab1.LabOneDriver"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="rcn6f4.cs3330.lab1"/>
+</launchConfiguration>

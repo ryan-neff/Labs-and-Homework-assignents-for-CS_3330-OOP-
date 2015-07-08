@@ -1,0 +1,58 @@
+package lab7;
+
+import java.util.ArrayList;
+
+public class LabSevenDriver {
+ 
+	public static void main(String[] args) {
+		ArrayList<Animal> animals = new ArrayList<Animal>();
+		animals.add(new Hawk("Hawk"));
+		animals.add(new Bat("Bat"));
+		animals.add(new Snake("Snake"));
+		animals.add(new Monkey("Monkey"));
+		
+		findWhoCanEatWho(animals);
+		findWhoCanFly(animals);
+		findWhoCantFly(animals);
+
+	}
+
+	private static void findWhoCantFly(ArrayList<Animal> animals) {
+        System.out.println("\nAnimals that can't fly: \n");
+		for(Animal animal : animals){
+        	if(!(animal instanceof Flying)){
+        	   System.out.println(animal.toString()+" ");
+        	   ((NonFlying) animal).movement();
+        	}
+        }
+		
+	}
+
+	private static void findWhoCanFly(ArrayList<Animal> animals) {
+		System.out.println("\nAnimals that can fly: \n"); 
+		for(Animal animal : animals){
+	        	if(animal instanceof Flying){
+	        	   System.out.println(animal.toString());
+	        	   ((Flying)animal).takeOff();
+	        	   ((Flying)animal).land();
+	        	}
+	        } 
+		
+	}
+
+	private static void findWhoCanEatWho(ArrayList<Animal> animals) {
+	     System.out.println("\nEdible Animals: \n");  //lol "Editable Animals" 
+		for(Animal animal :animals){
+	    	 if(animal.eat(new Hawk("Hawk"))){
+	    		 System.out.printf("%sand ate a hawk \n",animal.toString());
+	    	 } if(animal.eat(new Monkey("Monkey"))){
+	    		 System.out.printf("%sand ate a monkey \n",animal.toString());
+	    	 } if(animal.eat(new Bat("Bat"))){
+	    		 System.out.printf("%sand ate a bat \n",animal.toString());
+	    	 } if(animal.eat(new Snake("Snake"))){
+	    		 System.out.printf("%sand ate a snake \n",animal.toString());
+	    	 }
+	    }
+		
+	}
+}

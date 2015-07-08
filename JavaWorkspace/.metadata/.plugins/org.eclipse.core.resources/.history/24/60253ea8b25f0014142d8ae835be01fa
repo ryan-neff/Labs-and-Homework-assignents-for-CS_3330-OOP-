@@ -1,0 +1,22 @@
+package lab7;
+
+public class Bat extends Animal implements Flying{
+     public Bat(String type){
+    	  super(true, true, type); 	  
+     }
+     
+     public boolean eat(Animal food){
+    	   if( food instanceof Snake || food instanceof Bat){
+    		   return true;
+    	   }
+    	   return false;
+     }
+     
+     
+     public void takeOff(){
+       System.out.println("The bat has taken off!");	 
+     }
+     public void land(){
+    	 System.out.println("The bat has landed on the ground");
+     }
+}

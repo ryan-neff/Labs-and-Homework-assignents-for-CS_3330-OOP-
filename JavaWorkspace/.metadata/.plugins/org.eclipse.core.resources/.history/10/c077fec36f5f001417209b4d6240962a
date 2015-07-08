@@ -1,0 +1,34 @@
+package lab7;
+
+import java.util.ArrayList;
+
+public class LabSevenDriver {
+ 
+	public static void main(String[] args) {
+		ArrayList<Animal> animals = new ArrayList<Animal>();
+		animals.add(new Hawk("Hawk"));
+		animals.add(new Bat("Bat"));
+		animals.add(new Snake("Snake"));
+		animals.add(new Monkey("Monkey"));
+		
+		findWhoCanEatWho(animals);
+		findWhoCanFly(animals);
+		findWhoCantFly(animals);
+
+	}
+
+	private static void findWhoCantFly(ArrayList<Animal> animals) {
+     
+		
+	}
+
+	private static void findWhoCanFly(ArrayList<Animal> animals) {
+
+		
+	}
+
+	private static void findWhoCanEatWho(ArrayList<Animal> animals) {
+	
+		
+	}
+}

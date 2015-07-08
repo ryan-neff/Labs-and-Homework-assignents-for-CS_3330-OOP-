@@ -1,0 +1,20 @@
+package lab7;
+
+public class Hawk extends Animal implements Flying{
+   public Hawk(String type){
+	   super(true,true,"Hawk");
+   }
+   public boolean eat(Animal food){
+	   if(food instanceof Snake || food instanceof Bat ){
+		   return true;
+	   }
+	   return false;
+   }
+   public void takeOff(){
+	   System.out.println("The Hawk has taken off!");
+   }
+   public void land(){
+	   System.out.println("The hawk has landed on the ground");
+   }
+   
+}
